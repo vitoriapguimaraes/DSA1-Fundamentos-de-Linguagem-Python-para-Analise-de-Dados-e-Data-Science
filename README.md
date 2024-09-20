@@ -3,3 +3,4 @@
 **Curso: Fundamentos de Linguagem Python para Análise de Dados e Data Science**
 
 *Plataforma: Data Science Academy (DSA)*
+*Gabaritos em JupyterNotebook*
