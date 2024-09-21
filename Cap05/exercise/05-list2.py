@@ -71,27 +71,74 @@ print("### Exercício 5 ###")
 # Exercício 5 - Crie uma variável chamada temperatura e atribua o valor 40. Enquanto temperatura for
 # maior que 35, imprima as temperaturas na tela
 
+temperatura = 40
+
+while temperatura > 35:
+    print(temperatura)
+    temperatura = temperatura - 1
+
 
 print("-"*50)
 print("### Exercício 6 ###")
-# Exercício 6 - Execute o código abaixo e certifique-se que compreende a diferença entre variável global e local
 
+# Exercício 6 - Crie uma variável chamada contador = 0. Enquanto counter for menor que 100, imprima os
+# valores na tela, mas quando for encontrado o valor 23, interrompa a execução do programa
 
+contador = 0
 
-
+while contador < 100:
+    print(contador)
+    contador = contador + 1
+    if contador == 23:
+        break
+    
+    
 print("-"*50)
 print("### Exercício 7 ###")
+# Exercício 7 - Crie uma lista vazia e uma variável com valor 4. Enquanto o valor da variável for menor ou
+# igual a 20, adicione à lista, apenas os valores pares e imprima a lista
 
+sete_lista = []
+sete_i = 4
+
+while sete_i <= 20:
+    sete_lista.append(sete_i)
+    sete_i = sete_i + 2
+print(sete_lista)
 
 
 print("-"*50)
 print("### Exercício 8 ###")
+# Exercício 8 - Transforme o resultado desta função range em uma lista: range(5, 45, 2)
 
+oito_nums = range(5, 45, 2)
+
+print(list(oito_nums))
 
 
 print("-"*50)
 print("### Exercício 9 ###")
+# Exercício 9 - Faça a correção dos erros no código abaixo e execute o programa. Dica: são 3 erros.
+
+temperatura = float(input('Qual a temperatura? '))
+if temperatura > 30:
+    print('Vista roupas leves.')
+else:
+    print('Busque seus casacos.')
 
 
 print("-"*50)
 print("### Exercício 10 ###")
+
+# Exercício 10 - Faça um programa que conte quantas vezes a letra "r" aparece na frase abaixo. Use um
+# placeholder na sua instrução de impressão
+
+# “A gratidão é a virtude das almas nobres. O quão feliz é uma pessoa depende da profundidade de sua gratidão.” 
+
+frase = "A gratidão é a virtude das almas nobres. O quão feliz é uma pessoa depende da profundidade de sua gratidão." 
+
+count = 0
+for caracter in frase:
+    if caracter == "r":
+        count += 1
+print(f"O caracter r aparece {count} vezes na frase.")
