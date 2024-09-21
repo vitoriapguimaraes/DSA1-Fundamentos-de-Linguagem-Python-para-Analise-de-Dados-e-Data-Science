@@ -1,6 +1,6 @@
 # CURSO: Fundamentos de Linguagem Python para Analise de Dados e Data Science == CAPÍTULO 4
 
-### LISTA DE EXERCÍCIOS###
+### LISTA DE EXERCÍCIOS ###
 
 
 print("-"*50)
