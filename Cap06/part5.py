@@ -33,8 +33,17 @@ lista_soma = reduce(soma, lista)
 print(lista_soma)
 
 
+# Criando uma lista
+lst = [47, 11, 42, 13]
 
+# Usando a função reduce() com lambda
+print(reduce(lambda x,y: x+y, lst))
 
+# Podemos atribuir a expressão lambda a uma variável
+max_find2 = lambda a,b: a if (a > b) else b
+print(type(max_find2))
 
+# Reduzindo a lista até o valor máximo, através da função criada com a expressão lambda
+print(reduce(max_find2, lst))
 
 print("-"*50)
