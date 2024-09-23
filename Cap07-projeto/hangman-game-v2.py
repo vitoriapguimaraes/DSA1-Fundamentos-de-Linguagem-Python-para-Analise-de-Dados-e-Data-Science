@@ -2,6 +2,9 @@
 
 ### Game Development in Python ###
 
+### Hangman Game ###
+### Version 2 ###
+
 import random
 from os import system, name
 
@@ -14,6 +17,83 @@ def clear_screen ():
     else:                    # mac, linux
         _ = system("clear")
 
+# Function that draws the gallows on the screen
+def display_hangman(chances):
+
+    # List of stages of the gallows
+    stages = [  # stage 6 (final)
+"""
+    --------
+    |      |
+    |      O
+    |     \\|/
+    |      |
+    |     / \\
+    --
+""",
+                # stage 5
+"""
+    --------
+    |      |
+    |      O
+    |     \\|/
+    |      |
+    |     / 
+    --
+""",
+                # stage 4
+"""
+    --------
+    |      |
+    |      O
+    |     \\|/
+    |      |
+    |      
+    --
+""",
+                # stage 3
+"""
+    --------
+    |      |
+    |      O
+    |     \\|
+    |      |
+    |     
+    --
+""",
+                # stage 2
+"""
+    --------
+    |      |
+    |      O
+    |      |
+    |      |
+    |     
+    --
+""",
+                # stage 1
+"""
+    --------
+    |      |
+    |      O
+    |    
+    |      
+    |     
+    --
+""",
+                # stage 0
+"""
+    --------
+    |      |
+    |      
+    |    
+    |      
+    |     
+    --
+"""
+    ]
+    return stages[chances]
+
 # Main Game Function
 def game():
     
@@ -25,7 +105,7 @@ def game():
         category = {
             "frutas": ["morango", "banana", "laranja", "uva", "abacaxi", "kiwi"],
             "animais": ["leão", "tigre", "elefante", "cachorro", "gato", "golfinho"],
-            "países": ["brasil", "canadá", "japão", "austrália", "alemanaha", "méxico"],
+            "países": ["brasil", "canadá", "japão", "austrália", "alemanha", "méxico"],
             "cores": ["vermelho", "azul", "verde", "amarelo", "roxo", "laranja"],
             "objetos": ["cadeira", "mesa", "computador", "telefone", "lápis", "mochila"]
         }
@@ -43,7 +123,6 @@ def game():
         
     # Initial Messages
     print("\nBem-vindo(a) ao jogo a forca!")
-    print(f"\nA categoria é {category.upper()}. Adivinhe a palavra abaixo:\n")
     
     # Initializing Game Variables
     letters_found = ['_' for letter in word]
@@ -52,7 +131,8 @@ def game():
     
     # Loop While Chances Are Greater Than Zero
     while chances > 0:
-        
+        print(f"\nA categoria é {category.upper()}. Adivinhe a palavra abaixo:\n")
+        print(display_hangman(chances))
         print(" ".join(letters_found))
         print(f"\nChances restantes: {chances}")
         print(f"\nLetras erradas: {' '.join(letters_wrong)}")
@@ -66,7 +146,8 @@ def game():
                 else:
                     print("\nEntrada inválida. Digite apenas uma letra.")
         letter_try = askletter()
-        
+        print("\n")
+
         if letter_try in word:
             index = 0
             
