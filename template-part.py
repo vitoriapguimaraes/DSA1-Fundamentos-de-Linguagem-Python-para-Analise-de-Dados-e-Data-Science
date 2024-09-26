@@ -1,6 +1,6 @@
 # CURSO: Fundamentos de Linguagem Python para Analise de Dados e Data Science == CAPÍTULO 9
 
-### INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS ###
+### Python para Análise de Dados, Ciência de Dados, Machine Learning e Inteligência Artificial, o NumPy ###
 
 ### PARTE 1 == aaaaa ###
 
