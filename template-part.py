@@ -1,4 +1,4 @@
-# CURSO: Fundamentos de Linguagem Python para Analise de Dados e Data Science == CAPÍTULO 7
+# CURSO: Fundamentos de Linguagem Python para Analise de Dados e Data Science == CAPÍTULO 9
 
 ### INTRODUÇÃO À PROGRAMAÇÃO ORIENTADA A OBJETOS ###
 
