@@ -1,83 +1,82 @@
-# Hangman Game (Jogo da Forca) 
-# Programação Orientada a Objetos
+# # Hangman Game (Jogo da Forca) 
+# # Programação Orientada a Objetos
 
-# Import
-import random
+# # Import
+# import random
 
-# Board (tabuleiro)
-board = ['''
+# # Board (tabuleiro)
+# board = ['''
 
->>>>>>>>>>Hangman<<<<<<<<<<
+# >>>>>>>>>>Hangman<<<<<<<<<<
 
-+---+
-|   |
-    |
-    |
-    |
-    |
-=========''', '''
+# +---+
+# |   |
+#     |
+#     |
+#     |
+#     |
+# =========''', '''
 
-+---+
-|   |
-O   |
-    |
-    |
-    |
-=========''', '''
+# +---+
+# |   |
+# O   |
+#     |
+#     |
+#     |
+# =========''', '''
 
-+---+
-|   |
-O   |
-|   |
-    |
-    |
-=========''', '''
+# +---+
+# |   |
+# O   |
+# |   |
+#     |
+#     |
+# =========''', '''
 
- +---+
- |   |
- O   |
-/|   |
-     |
-     |
-=========''', '''
+#  +---+
+#  |   |
+#  O   |
+# /|   |
+#      |
+#      |
+# =========''', '''
 
- +---+
- |   |
- O   |
-/|\  |
-     |
-     |
-=========''', '''
+#  +---+
+#  |   |
+#  O   |
+# /|\  |
+#      |
+#      |
+# =========''', '''
 
- +---+
- |   |
- O   |
-/|\  |
-/    |
-     |
-=========''', '''
+#  +---+
+#  |   |
+#  O   |
+# /|\  |
+# /    |
+#      |
+# =========''', '''
 
- +---+
- |   |
- O   |
-/|\  |
-/ \  |
-     |
-=========''']
+#  +---+
+#  |   |
+#  O   |
+# /|\  |
+# / \  |
+#      |
+# =========''']
 
 
-# Classe
-class Hangman:
+# # Classe
+# class Hangman:
 
-	# Método Construtor
+# 	# Método Construtor
 
-	# Método para adivinhar a letra
+# 	# Método para adivinhar a letra
 	
-	# Método para verificar se o jogo terminou
+# 	# Método para verificar se o jogo terminou
 		
-	# Método para verificar se o jogador venceu
+# 	# Método para verificar se o jogador venceu
 		
-	# Método para não mostrar a letra no board
+# 	# Método para não mostrar a letra no board
 		
-	# Método para checar o status do game e imprimir o board na tela
-
+# 	# Método para checar o status do game e imprimir o board na tela
