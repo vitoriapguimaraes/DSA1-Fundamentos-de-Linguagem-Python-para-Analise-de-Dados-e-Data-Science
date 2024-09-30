@@ -57,3 +57,12 @@ sea.despine()
 # Show
 plt.show()
 
+
+
+### Links úteis
+
+# Lista de cores no Matplotlib
+# https://matplotlib.org/stable/gallery/color/named_colors.html
+
+# Seaborn Gallery
+# https://seaborn.pydata.org/examples/index.htmlData

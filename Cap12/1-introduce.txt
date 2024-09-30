@@ -1,0 +1,34 @@
+Python e Linguagem SQL
+
+A Linguagem SQL (Structured Query Language) é uma linguagem de programação padrão usada para gerenciar e manipular bancos de
+dados relacionais. Ela permite aos usuários acessar, modificar, inserir e excluir dados, bem como criar e gerenciar tabelas e
+estruturas de banco de dados.
+
+O SQL é amplamente utilizado por Desenvolvedores, Analistas de Dados, Cientistas de Dados, Engenheiros de Dados e
+Administradores de Banco de Dados (DBAs) para trabalhar com bancos de dados relacionais, como MySQL, PostgreSQL, Oracle, SQL
+Server, DB2, SQLit e, entre outros.
+
+A Linguagem SQL consiste em várias instruções, que podem ser agrupadas nas seguintes categorias:
+
+1 - DDL (Data Definition Language) - define e gerencia a estrutura de tabelas e objetos do banco de dados:
+    •	CREATE: cria uma nova tabela ou objeto no banco de dados.
+    •	ALTER: modifica uma tabela ou objeto existente.
+    •	DROP: exclui uma tabela ou objeto existente.
+
+2 - DML (Data Manipulation Language) - manipula os dados armazenados nas tabelas:
+    •	SELECT: recupera dados de uma ou mais tabelas.
+    •	INSERT: insere novos registros em uma tabela.
+    •	UPDATE: atualiza registros existentes em uma tabela.
+    •	DELETE: exclui registros de uma tabela.
+
+3 - DCL (Data Control Language) - gerencia permissões e controle de acesso aos objetos do banco de dados:
+    •	GRANT: concede permissões a usuários ou grupos para acessar e manipular objetos do banco de dados.
+    •	REVOKE: remove permissões concedidas anteriormente.
+
+4 - TCL (Transaction Control Language) - gerencia transações no banco de dados:
+    •	BEGIN TRANSACTION: inicia uma nova transação.
+    •	COMMIT: salva todas as alterações feitas na transação atual.
+    •	ROLLBACK: desfaz as alterações feitas na transação atual.
+    •	SAVEPOINT: cria um ponto de salvamento na transação atual, permitindo que você reverta para esse ponto, se necessário.
+
+Neste capítulo usaremos a instrução SELECT para extrair e analisar dados de um banco de dados relacional.

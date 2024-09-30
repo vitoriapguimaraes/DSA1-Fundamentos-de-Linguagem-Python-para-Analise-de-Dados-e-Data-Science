@@ -1,0 +1,26 @@
+O Que é um SGBD (Sistema Gerenciador de Banco de Dados)?
+
+Um Sistema Gerenciador de Banco de Dados (SGBD) é um software projetado para gerenciar, armazenar, manipular e consultar
+dados em um banco de dados. SGBDs são fundamentais para o gerenciamento eficiente e seguro de grandes quantidades de dados em
+aplicações e sistemas de informação.
+
+Os SGBDs fornecem uma interface entre os usuários e os dados armazenados, permitindo a realização de diversas operações, como:
+
+    •   Criação e modificação de estruturas de dados (tabelas, índices, etc...).
+    •   Inserção, atualização e exclusão de dados.
+    •   Realização de consultas e recuperação de informações.
+    •   Controle de acesso e segurança, garantindo que apenas usuários autorizados possam acessar e modificar os dados.
+    •   Garantia de integridade e consistência dos dados.
+    •   Otimização de consultas e melhoria do desempenho do banco de dados.
+    •   Recuperação de falhas e realização de backups.
+
+Existem diversos tipos de SGBDs disponíveis no mercado, como os relacionais (MySQL, PostgreSQL, Microsoft SQL Server, Oracle,
+IBM DB2, SQLite, etc...), os orientados a objetos (MongoDB, Couchbase, etc...) e os de colunas (Apache Cassandra, HBase,
+etc...), entre outros. A escolha do SGBD adequado depende das necessidades e requisitos específicos do projeto ou aplicação.
+
+Um SGBD pode gerenciar um ou mais bancos de dados. Os bancos de dados são as estruturas onde os dados são realmente armazenados.
+
+Neste capítulo usaremos um dos mais simples e leves SGBDs, o SQLite. Embora o SQLite não ofereça muitos recursos encontrados
+em outros SGBDs, tem como grande vantagem a possibilidade de gerenciar arquivos pequenos e leves que podem ser usados para
+armazenar dados e são portáveis entre diferentes sistemas operacionais. Bancos de dados do SQLite são muito comuns em apps
+para smartphones e amplamente usados em tarefas de Ciência de Dados e neste capítulo você verá alguns exemplos.
