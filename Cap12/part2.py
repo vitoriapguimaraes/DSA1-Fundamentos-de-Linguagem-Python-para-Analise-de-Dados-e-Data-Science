@@ -9,8 +9,7 @@ import pandas as pd
 print(sqlite3.sqlite_version)
 print(pd.__version__)
 
-
-### Conectando no Banco de Dados com Linguagem Python ###
+### Aplicando Linguagem SQL na Sintaxe do Pandas com Linguagem Python ###
 
 # Conecta no banco de dados
 con = sqlite3.connect('Cap12/cap12_dsa.db')
