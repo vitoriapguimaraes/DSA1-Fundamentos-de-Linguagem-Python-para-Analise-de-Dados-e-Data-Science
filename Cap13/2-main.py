@@ -86,9 +86,12 @@ print(f"\n>>> Total de Vendas por Estado (primeiras cinco linhas): <<<\n{df_p3.h
 
 plt.figure(figsize= (12,12))
 sns.barplot(data=df_p3,
-            color= 'red',
             x = 'Estado',
-            y = 'Valor_Venda').set(title = "Total de Vendas Por Estado")
+            y = 'Valor_Venda',
+            hue= 'Estado',
+            palette=sns.color_palette("husl", n_colors=49, as_cmap=False),
+            dodge=False,
+            legend=False).set(title = "Total de Vendas Por Estado")
 plt.xlabel("Estado")
 plt.ylabel("Total do Valor de Venda (R$)")
 plt.xticks(rotation = 80)
@@ -101,17 +104,18 @@ print("\nPergunta de Negócio 4")
 print("Quais São as 10 Cidades com Maior Total de Vendas?")
 print("Demonstre o resultado através de um gráfico de barras.")
 
-df_p4 = df.groupby("Cidade")["Valor_Venda"].sum().reset_index()
-df_p4_maior = df_p4.sort_values(by="Valor_Venda", ascending = False)
-df_p4_10 = df_p4_maior[0:10]
+df_p4 = df.groupby("Cidade")["Valor_Venda"].sum().reset_index().sort_values(by="Valor_Venda", ascending = False)[0:10]
 
-print(f"\n>>> As 10 Cidades com Maior Total de Vendas: <<<\n{df_p4_10}")
+print(f"\n>>> As 10 Cidades com Maior Total de Vendas: <<<\n{df_p4}")
 
 plt.figure(figsize= (12,8))
-sns.barplot(data=df_p4_10,
-            color= 'green',
+sns.barplot(data=df_p4,
             x = 'Cidade',
-            y = 'Valor_Venda').set(title = "As 10 Cidades com Maior Total de Vendas")
+            y = 'Valor_Venda',
+            hue= 'Cidade',
+            palette=sns.color_palette("Set1", n_colors=10, as_cmap=False),
+            dodge=False,
+            legend=False).set(title = "As 10 Cidades com Maior Total de Vendas")
 plt.xlabel("Cidade")
 plt.ylabel("Total do Valor de Venda (R$)")
 plt.xticks(rotation = 45)
@@ -124,8 +128,11 @@ print("\nPergunta de Negócio 5")
 print("Qual Segmento Teve o Maior Total de Vendas?")
 print("Demonstre o resultado através de um gráfico de pizza.")
 
-df_p5 = df.groupby("Segmento")["Valor_Venda"].sum().reset_index()
+df_p5 = df.groupby("Segmento")["Valor_Venda"].sum().reset_index().sort_values(by= 'Valor_Venda', ascending= False)
 df_p5['Valor_Venda_Formatado'] = df_p5['Valor_Venda'].apply(lambda x: f'{x:,.2f}')
+df_p5_lista = df_p5["Segmento"].to_list()
+
+print(f"\n>>> O Segmento com Maior Total de Vendas foi {df_p5_lista[0]}")
 
 print(f"\n>>> Segmentos com Maiores Vendas: <<<\n{df_p5[['Segmento', 'Valor_Venda_Formatado']]}")
 
@@ -143,6 +150,7 @@ plt.pie(df_p5["Valor_Venda"],
         startangle = 90)
 plt.title("Segmentos com Maiores Vendas")
 plt.axis('equal')
+
 centre_circle = plt.Circle((0, 0), 0.88, fc = 'white')
 fig = plt.gcf()
 fig.gca().add_artist(centre_circle)
