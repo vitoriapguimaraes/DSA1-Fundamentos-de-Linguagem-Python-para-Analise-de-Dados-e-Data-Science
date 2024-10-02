@@ -74,7 +74,7 @@ plt.xlabel("Data do Pedido")
 plt.ylabel("Total do Valor de Venda (R$)")
 plt.savefig(f"{caminho}/Pergunta 2")
 # plt.show()
-print(f"\nGráfico da Pergunta 2 exportado para {caminho}")
+print(f"\nGráfico da Pergunta 2 exportado para {caminho}.")
 
 
 print("\nPergunta de Negócio 3")
@@ -97,7 +97,7 @@ plt.ylabel("Total do Valor de Venda (R$)")
 plt.xticks(rotation = 80)
 plt.savefig(f"{caminho}/Pergunta 3")
 # plt.show()
-print(f"\nGráfico da Pergunta 3 exportado para {caminho}")
+print(f"\nGráfico da Pergunta 3 exportado para {caminho}.")
 
 
 print("\nPergunta de Negócio 4")
@@ -121,7 +121,7 @@ plt.ylabel("Total do Valor de Venda (R$)")
 plt.xticks(rotation = 45)
 plt.savefig(f"{caminho}/Pergunta 4")
 # plt.show()
-print(f"\nGráfico da Pergunta 4 exportado para {caminho}")
+print(f"\nGráfico da Pergunta 4 exportado para {caminho}.")
 
 
 print("\nPergunta de Negócio 5")
@@ -132,7 +132,7 @@ df_p5 = df.groupby("Segmento")["Valor_Venda"].sum().reset_index().sort_values(by
 df_p5['Valor_Venda_Formatado'] = df_p5['Valor_Venda'].apply(lambda x: f'{x:,.2f}')
 df_p5_lista = df_p5["Segmento"].to_list()
 
-print(f"\n>>> O Segmento com Maior Total de Vendas foi {df_p5_lista[0]}")
+print(f"\n>>> O Segmento com Maior Total de Vendas foi {df_p5_lista[0]}. <<<")
 
 print(f"\n>>> Segmentos com Maiores Vendas: <<<\n{df_p5[['Segmento', 'Valor_Venda_Formatado']]}")
 
@@ -156,7 +156,7 @@ fig = plt.gcf()
 fig.gca().add_artist(centre_circle)
 plt.savefig(f"{caminho}/Pergunta 5")
 # plt.show()
-print(f"\nGráfico da Pergunta 5 exportado para {caminho}")
+print(f"\nGráfico da Pergunta 5 exportado para {caminho}.")
 
 
 print("\nPergunta de Negócio 6")
@@ -167,8 +167,14 @@ df['Ano'] = df['ID_Pedido'].str.split('-').str[1].astype(int)
 # print(df.head())
 # print(df.dtypes)
 
-df_p6 = df.groupby(["Ano", "Segmento"])["Valor_Venda"].sum().reset_index()
+df_p6 = df.groupby(["Ano", "Segmento"])["Valor_Venda"].sum()
 print(f"\n>>> Total de Vendas Por Segmento e Por Ano: <<<\n{df_p6}")
+
+# Outra resolução
+# Extraímos o ano criando nova variável
+# df['Ano'] = df['Data_Pedido'].dt.year
+# Total de vendas por segmento e por ano
+# df_p6 = df.groupby(['Ano', 'Segmento'])['Valor_Venda'].sum()
 
 
 print("\nPergunta de Negócio 7")
@@ -183,38 +189,127 @@ df_p7 = df['Desconto'].value_counts().tolist()
 print(f"\n>>> No Total {df_p7[1]} Vendas Receberiam Desconto de 15%. <<<")
 
 
-print("\nPergunta de Negócio 7")
+print("\nPergunta de Negócio 8")
 print("""Considere Que a Empresa Decida Conceder o Desconto de 15% do Item Anterior.
 Qual seria a Média do Valor de Venda Antes e Depois do Desconto?""")
 
-print(df.head())
+df['Valor_desconto_15'] = np.where(df['Desconto'] == 0.15, df['Valor_Venda']*(1-0.15), df['Valor_Venda'])
 
-df['Valor_Venda_Desconto'] = df['Valor_Venda']*(1-df['Desconto'])
+print(f"\n>>> A Média do Valor de TODAS as Vendas Antes do Desconto é R$ {round(df['Valor_Venda'].mean(), 2)}. <<<")
+print(f">>> A Média do Valor de TODAS as Vendas Depois do Desconto é R$ {round(df['Valor_desconto_15'].mean(), 2)}. <<<")
 
-print(df.head())
+df_p8 = df[df['Desconto'] == 0.15]
 
-# pegar média da coluna valor_venda e média valor_venda_desconto
-
-print(f"\nO ")
-print(df['Valor_Venda'].mean())
-print(df['Valor_Venda_Desconto'].mean()) ### erro: empresa concedeu só o de 15%
-# arrumar amanhã
+print(f"\n>>> A Média do Valor das Vendas, maiores que R$ 1000, Antes do Desconto é R$ {round(df_p8['Valor_Venda'].mean(), 2)}. <<<")
+print(f">>> A Média do Valor das Vendas, maiores que R$ 1000, Depois do Desconto é R$ {round(df_p8['Valor_desconto_15'].mean(), 2)}. <<<")
 
 
+print("\nPergunta de Negócio 9")
+print("""Qual o Média de Vendas Por Segmento, Por Ano e Por Mês?
+Demonstre o resultado através de gráfico de linha.""")
+
+df['Data_Pedido'] = pd.to_datetime(df['Data_Pedido'], dayfirst=True)
+df['Mes'] = df['Data_Pedido'].dt.month
+# alternativa: df['Mes'] = df['Data_Pedido'].str.split('/').str[1].astype(int)
+
+df['Ano_Mes'] = df['Ano'].astype(str) + '/' + df['Mes'].astype(str).str.zfill(2)
+
+# Conferindo novas colunas criadas
+# print(df.head())
+# print(df.dtypes)
+
+df_p9 = df.groupby(['Segmento', 'Ano_Mes'])['Valor_Venda'].mean().reset_index()
+
+print(f"\n>>> Média de Vendas Por Segmento, Por Ano e Por Mês: <<<\n{df_p9}")
+
+# figura 1
+plt.figure(figsize= (12,8))
+sns.set()
+sns.lineplot(data=df_p9, x='Ano_Mes', y='Valor_Venda', hue='Segmento', marker= 'o')
+plt.title("Média de Vendas Por Segmento, Por Ano e Por Mês")
+plt.xlabel("Ano/Mês")
+plt.ylabel("Média de Vendas (R$)")
+plt.xticks(rotation=45)
+plt.grid(True)
+plt.savefig(f"{caminho}/Pergunta 9-1")
+# plt.show()
+print(f"\nO primeiro gráfico da Pergunta 9 exportado para {caminho}.")
+
+# figura 2
+df_p9_2 = df.groupby(['Segmento', 'Ano', 'Mes'])['Valor_Venda'].mean().reset_index()
+fig1 = sns.relplot(kind = 'line',
+                   data = df_p9_2, 
+                   y = 'Valor_Venda', 
+                   x = 'Mes',
+                   hue = 'Segmento', 
+                   col = 'Ano',
+                   col_wrap = 4)
+fig1.set_axis_labels("Mês", "Média de Vendas (R$)") \
+    .set_titles("Média de Vendas de {col_name} Por Segmento e Por Mês")
+plt.savefig(f"{caminho}/Pergunta 9-2")
+# plt.show()
+print(f"O segundo gráfico da Pergunta 9 exportado para {caminho}.")
 
 
+print("\nPergunta de Negócio 10")
+print("""Qual o Total de Vendas Por Categoria e SubCategoria, Considerando Somente as Top 12 SubCategorias?
+Demonstre tudo através de um único gráfico.""")
 
+# As top 12 subcategorias
+df_p10_sub = df.groupby('SubCategoria')['Valor_Venda'].sum().sort_values(ascending= False).reset_index()
+df_p10_sub_list = df_p10_sub['SubCategoria'][0:12].to_list()
+df_p10_top12 = df[df['SubCategoria'].isin(df_p10_sub_list)]
 
+# Dados para o gráfico
+df_p10 = df_p10_top12.groupby(['Categoria', 'SubCategoria'])['Valor_Venda'].sum().reset_index()
+df_p10_cat = df_p10.groupby('Categoria')['Valor_Venda'].sum().reset_index()
 
+# Listas de cores
+cores_categorias = ['#5d00de',
+                    '#0ee84f',
+                    '#e80e27']
+cores_subcategorias = ['#aa8cd4',
+                       '#aa8cd5',
+                       '#aa8cd6',
+                       '#aa8cd7',
+                       '#26c957',
+                       '#26c958',
+                       '#26c959',
+                       '#26c960',
+                       '#e65e65',
+                       '#e65e66',
+                       '#e65e67',
+                       '#e65e68']
 
+# Criando o gráfico de pizza
+fig, ax = plt.subplots(figsize=(16, 16))
 
+p1 = ax.pie(df_p10_cat['Valor_Venda'],
+            radius= 1,
+            labels= df_p10_cat['Categoria'],
+            wedgeprops= dict(edgecolor = 'white'),
+            colors= cores_categorias,
+            textprops={'fontsize': 16})
 
-# Pergunta de Negócio 9 (Desafio Nível Master Ninja):
+p2 = ax.pie(df_p10['Valor_Venda'],
+            radius= 0.9,
+            labels= df_p10['SubCategoria'],
+            autopct= autopct_format(df_p10['Valor_Venda']),
+            colors= cores_subcategorias,
+            labeldistance= 0.7,
+            wedgeprops= dict(edgecolor = 'white'),
+            pctdistance= 0.53,
+            rotatelabels= True,
+            textprops={'fontsize': 12})
 
-#    Qual o Média de Vendas Por Segmento, Por Ano e Por Mês?
-#    Demonstre o resultado através de gráfico de linha.
+centre_circle = plt.Circle((0, 0), 0.6, fc = 'white')
+fig = plt.gcf()
+fig.gca().add_artist(centre_circle)
+plt.annotate(text = 'Total de Vendas: ' + 'R$ ' + str(int(sum(df_p10['Valor_Venda']))), xy = (-0.2, 0))
+plt.title('Total de Vendas Por Categoria e Top 12 SubCategorias', fontsize = 16)
 
-# Pergunta de Negócio 10 (Desafio Nível Master Ninja das Galáxias):
+plt.savefig(f"{caminho}/Pergunta 10")
+# plt.show()
+print(f"O segundo gráfico da Pergunta 10 exportado para {caminho}.")
 
-#    Qual o Total de Vendas Por Categoria e SubCategoria, Considerando Somente as Top 12 SubCategorias?
-#    Demonstre tudo através de um único gráfico.
+plt.show()
