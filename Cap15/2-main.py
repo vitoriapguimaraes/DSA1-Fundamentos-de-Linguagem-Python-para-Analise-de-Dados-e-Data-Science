@@ -2,7 +2,3 @@
 # => CAPÍTULO 15
 
 ### Machine Learning ###
-
-### aaaaa ###
-
-print("-"*50)
