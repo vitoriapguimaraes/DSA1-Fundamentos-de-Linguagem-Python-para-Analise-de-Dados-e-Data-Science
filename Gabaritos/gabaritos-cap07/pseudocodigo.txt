@@ -1,0 +1,68 @@
+Iniciar Jogo da Forca
+
+# Etapa de Inicialização
+Escolher uma palavra secreta
+Criar uma lista para letras adivinhadas com o mesmo tamanho da palavra secreta (ex: "_ _ _")
+Definir a quantidade máxima de erros (tentativas)
+Definir número de erros atuais como 0
+Criar uma lista vazia para armazenar letras já tentadas
+
+# Loop do jogo
+Enquanto o jogador não tiver adivinhado a palavra E o número de erros for menor que o máximo permitido:
+    Mostrar o estado atual da palavra (com letras adivinhadas e "_")
+    Mostrar letras já tentadas
+    Pedir ao jogador que adivinhe uma letra
+    Se a letra já foi tentada:
+        Informar que a letra já foi usada
+    Senão:
+        Adicionar a letra à lista de letras tentadas
+        Se a letra estiver na palavra secreta:
+            Substituir os "_" pela letra nas posições corretas
+        Senão:
+            Aumentar o número de erros
+    
+    # Verificar se a palavra foi adivinhada
+    Se não houver mais "_" na palavra:
+        Jogador venceu
+    
+    # Verificar se o número de tentativas foi excedido
+    Se o número de erros for igual ao máximo permitido:
+        Jogador perdeu
+
+# Fim do Jogo
+Se o jogador venceu:
+    Exibir mensagem de parabéns
+Senão:
+    Exibir mensagem de derrota e revelar a palavra secreta
+
+Fim do Jogo
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Para desenvolver o jogo da forca em Python, você pode seguir os seguintes passos:
+
+1- Definir a lista de palavras possíveis
+
+2- Escolher uma palavra aleatória da lista
+
+3- Criar uma lista vazia para armazenar as letras adivinhadas
+
+4- Definir o número máximo de tentativas permitidas
+
+5- Enquanto o número de tentativas não atingir o limite máximo:
+
+a. Mostrar a palavra como uma série de underscores, com as letras adivinhadas preenchidas nos espaços corretos
+
+b. Pedir ao jogador que adivinhe uma letra
+
+c. Verificar se a letra adivinhada está na palavra
+
+d. Se a letra adivinhada está na palavra, adicionar a letra à lista de letras adivinhadas e atualizar a exibição da palavra
+
+e. Se a letra adivinhada não está na palavra, reduzir o número de tentativas restantes e exibir a mensagem "Letra incorreta. Tentativas restantes: [número de tentativas restantes]"
+
+f. Verificar se todas as letras da palavra foram adivinhadas
+
+g. Se todas as letras foram adivinhadas, exibir a mensagem "Você venceu!"
+
+h. Se o número de tentativas restantes chegar a zero, exibir a mensagem "Você perdeu. A palavra era [palavra escolhida]" e encerrar o jogo.

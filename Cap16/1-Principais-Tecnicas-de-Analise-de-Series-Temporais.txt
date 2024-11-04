@@ -1,0 +1,97 @@
+           Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+    Análise de Dados e Data Science
+
+     Principais Técnicas de Análise
+          de Séries Temporais
+
+
+
+
+                Data Science Academy
+            www.datascienceacademy.com.br
+                            Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+       Existem diversas técnicas de análise de séries temporais que podem ser usadas para
+entender e modelar a estrutura dos dados ao longo do tempo. Algumas das principais técnicas
+incluem:
+
+        Decomposição de Séries Temporais: A decomposição é uma técnica que separa uma série
+temporal em seus componentes básicos, como tendência, sazonalidade e resíduos (ou ruído).
+Isso ajuda a entender melhor a dinâmica da série e facilita a modelagem e previsão.
+
+        Médias Móveis: As médias móveis são uma técnica de suavização que calcula a média de
+um número fixo de pontos de dados consecutivos para criar uma nova série temporal suavizada.
+Isso ajuda a reduzir o ruído e identificar tendências de longo prazo.
+
+        Suavização Exponencial: A suavização exponencial é outra técnica de suavização que
+atribui pesos exponencialmente decrescentes aos pontos de dados anteriores. Isso dá mais
+importância aos dados mais recentes e ajuda a identificar tendências e padrões de curto prazo.
+
+       Modelos Autorregressivos (AR): Os modelos autorregressivos são modelos lineares que
+usam os valores passados da própria série temporal para prever valores futuros. O número de
+valores passados usados no modelo é chamado de ordem do modelo AR.
+
+       Modelos de Médias Móveis (MA): Os modelos de médias móveis são modelos lineares
+que usam os resíduos passados (erros de previsão) para prever valores futuros. O número de
+resíduos passados usados no modelo é chamado de ordem do modelo MA.
+
+        Modelos ARIMA (Autoregressive Integrated Moving Average): Os modelos ARIMA
+combinam elementos dos modelos AR e MA e também incluem a diferenciação para tornar a
+série temporal estacionária. Os modelos ARIMA são amplamente utilizados para previsão de
+séries temporais e podem lidar com tendências e sazonalidades.
+
+       Modelos SARIMA (Seasonal ARIMA): Os modelos SARIMA estendem os modelos ARIMA
+para incluir termos sazonais, tornando-os adequados para séries temporais com padrões
+sazonais claros.
+
+       Modelos de Espaço de Estados: Os modelos de espaço de estados são uma abordagem
+mais geral para modelar séries temporais que podem incluir modelos lineares e não lineares,
+bem como modelos com efeitos fixos e aleatórios. Exemplos de modelos de espaço de estados
+incluem modelos de suavização exponencial de Holt-Winters e modelos de Kalman.
+
+       Métodos de Aprendizado de Máquina: Além das técnicas estatísticas tradicionais, os
+métodos de aprendizado de máquina, como redes neurais, máquinas de vetores de suporte e
+árvores de decisão, também podem ser usados para modelar e prever séries temporais. Esses
+métodos geralmente requerem a transformação dos dados de séries temporais em um formato
+adequado para modelagem de aprendizado de máquina.
+
+
+
+
+                                  Data Science Academy
+                              www.datascienceacademy.com.br
+                            Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+      Cada técnica tem suas próprias vantagens e limitações, e a escolha da técnica mais
+adequada depende das características da série temporal em questão, como a presença de
+tendências, sazonalidades e ruído, bem como os objetivo do projeto.
+
+       Análise e previsão de séries temporais é uma atividade de nível avançado no universo da
+Ciência de Dados e neste capítulo vamos trazer uma breve introdução ao tema. Escolhemos para
+este capítulo a técnica de Suavização Exponencial.
+
+
+
+
+                                  Data Science Academy
+                              www.datascienceacademy.com.br
+

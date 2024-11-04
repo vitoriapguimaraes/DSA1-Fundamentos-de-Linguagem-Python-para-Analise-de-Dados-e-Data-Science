@@ -1,0 +1,34 @@
+CURSO: Fundamentos de Linguagem Python para Analise de Dados e Data Science
+=> CAPÍTULO 16
+
+### Análise  de  Séries  Temporais ###
+
+Análise  de  Séries  Temporais é  um  tema  extenso  com  diversas  técnicas,
+métodos, abordagens e ferramentas. Neste capítulo vamos trazer uma breve
+introdução ao tema com o pacote Statsmodelsem Linguagem Python.
+
+--------------------------------------------------------------------------------
+
+O Que São Séries Temporais?
+
+Séries temporais são conjuntos de dados que são coletados, observados ou
+registrados em intervalos de tempo regulares ou irregulares. Esses dados são
+organizados em uma sequência
+temporal, o que significa que cada ponto de dado está associado a um momento específico no
+tempo. As séries temporais são usadas para analisar tendências, padrões e sazonalidades nos
+dados ao longo do tempo, bem como para prever eventos futuros com base nos dados históricos.
+
+Séries temporais são comuns em várias áreas, incluindo economia, finanças,
+meteorologia, ciências sociais e muitos outros campos. Alguns exemplos de séries temporais
+incluem:
+
+  •   Preços diários de ações no mercado de ações.
+  •   Número de vendas mensais de um produto específico.
+  •   Temperatura média diária em uma cidade ao longo de um ano.
+  •   Quantidade de chuva acumulada por hora durante um evento climático.
+
+A análise de séries temporais envolve o uso de técnicas estatísticas e de aprendizado de
+máquina (Machine Learning) para identificar tendências, padrões e relações nos dados ao longo
+do tempo, bem como para prever eventos futuros com base nos dados históricos. Essas técnicas
+incluem decomposição de séries temporais, suavização exponencial, modelos autorregressivos,
+modelos de médias móveis, modelos ARIMA, técnicas de Inteligência Artificial, entre outras.

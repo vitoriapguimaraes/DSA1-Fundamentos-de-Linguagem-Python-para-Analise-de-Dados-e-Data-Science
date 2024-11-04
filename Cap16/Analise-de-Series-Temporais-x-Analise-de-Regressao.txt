@@ -1,0 +1,102 @@
+          Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+              Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+    Análise de Dados e Data Science
+
+     Análise de Séries Temporais
+                  x
+        Análise de Regressão
+
+
+
+
+               Data Science Academy
+           www.datascienceacademy.com.br
+                               Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                   Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+       No capítulo anterior estudamos uma introdução a Machine Learning através da análise
+de regressão. Poderíamos usar análise de regressão para analisar e prever séries temporais?
+Embora seja possível, não é o ideal. Vamos compreender isso em detalhes.
+
+        A análise de séries temporais e a análise de regressão são duas abordagens diferentes
+para analisar e modelar dados, embora possam ter algumas semelhanças em termos de técnicas
+estatísticas. A principal diferença entre as duas abordagens está no tipo de dados que estão
+sendo analisados e nos objetivos da análise.
+
+Análise de Séries Temporais:
+
+       Lida com dados coletados ao longo do tempo, onde cada observação está associada a um
+ponto específico no tempo.
+
+      O objetivo principal é identificar padrões, tendências e sazonalidades nos dados, e prever
+eventos futuros com base nos dados históricos.
+
+       As técnicas de análise de séries temporais levam em consideração a estrutura temporal
+dos dados, como autocorrelação (a correlação entre os valores de uma série temporal e seus
+valores defasados) e estacionariedade (a propriedade de ter média, variância e autocorrelação
+constantes ao longo do tempo).
+
+        Exemplos de técnicas de análise de séries temporais incluem modelos autorregressivos
+(AR), modelos de médias móveis (MA), modelos ARIMA, suavização exponencial e técnicas de
+Inteligência Artificial.
+
+Análise de Regressão:
+
+      Lida com a relação entre uma variável dependente e uma ou mais variáveis
+independentes (explicativas).
+
+      O objetivo principal é modelar a relação entre as variáveis, estimar os efeitos das variáveis
+independentes na variável dependente e fazer inferências sobre essas relações.
+
+       A análise de regressão não se concentra na estrutura temporal dos dados, mas sim na
+relação entre as variáveis.
+
+        Exemplos de técnicas de análise de regressão incluem regressão linear simples, regressão
+linear múltipla, regressão logística e regressão não linear.
+
+
+
+
+                                    Data Science Academy
+                                www.datascienceacademy.com.br
+                             Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                 Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+        Apesar das diferenças, algumas técnicas de análise de séries temporais e análise de
+regressão estão relacionadas. Por exemplo, os modelos autorregressivos (AR) usados na análise
+de séries temporais são semelhantes à regressão linear, mas com a diferença de que os valores
+defasados da própria série temporal são usados como variáveis independentes.
+
+      Além disso, a regressão com variáveis defasadas ou funções de tempo pode ser usada
+para modelar a relação temporal em séries temporais, embora isso não seja tão comum quanto
+os métodos específicos de análise de séries temporais.
+
+       Ou seja, análise de regressão e técnicas de análise de séries temporais têm como objetivo
+a previsão de valores numéricos. Na regressão não estamos preocupados com o fator tempo,
+enquanto na análise de séries temporais tudo gira em torno do fator tempo.
+
+        Logo, a escolha da técnica dependerá, como sempre, do problema de negócio a ser
+resolvido.
+
+
+
+
+                                  Data Science Academy
+                              www.datascienceacademy.com.br
+
