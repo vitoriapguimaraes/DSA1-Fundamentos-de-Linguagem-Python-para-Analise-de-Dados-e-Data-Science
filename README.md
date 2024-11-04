@@ -12,7 +12,7 @@ Este repositório documenta meu progresso e atividades desenvolvidas durante o c
 
 ### Estrutura do Repositório
 - Gabaritos: Notebooks do Jupyter organizados com resoluções e respostas dos exercícios propostos ao longo do curso, proporcionando uma base prática para consulta e revisão.
-- Certificados: Certificados de conclusão disponíveis na pasta <code>/certificado</code>, evidenciando a finalização dos módulos e do curso completo.
+- Certificados: Certificados de conclusão disponíveis na pasta <code>/_Certificado</code>, evidenciando a finalização dos módulos e do curso completo.
 
 <hr>
 
