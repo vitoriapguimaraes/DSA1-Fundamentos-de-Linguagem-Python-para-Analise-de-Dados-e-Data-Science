@@ -1,0 +1,62 @@
+          Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+              Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+    Análise de Dados e Data Science
+
+        O Que é Um Chatbot?
+
+
+
+
+               Data Science Academy
+           www.datascienceacademy.com.br
+                             Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                 Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+       Um chatbot é um programa de computador desenvolvido para simular conversas
+humanas. Ele é projetado para interagir com os usuários em linguagem natural, geralmente
+através de interfaces de mensagens como websites, aplicativos de mensagens móveis ou
+plataformas de redes sociais.
+
+       Os chatbots são comumente usados para lidar com consultas de atendimento ao cliente,
+responder perguntas frequentes, realizar tarefas de agendamento ou fornecer informações
+detalhadas sobre um produto ou serviço. Eles são programados para responder de maneira a
+simular a conversação humana e são especialmente úteis para lidar com interações repetitivas,
+liberando tempo para que os humanos lidem com tarefas mais complexas.
+
+       Existem dois tipos principais de chatbots:
+
+      Chatbots baseados em regras: Esses chatbots respondem a consultas específicas e
+seguem um conjunto pré-definido de regras. Eles são limitados em termos de capacidade de
+compreensão e não conseguem lidar com perguntas fora das regras pré-definidas.
+
+       Chatbots baseados em Inteligência Artificial: Esses chatbots utilizam técnicas de
+Processamento de Linguagem Natural (PLN) e Aprendizado de Máquina (Machine Learning) para
+entender melhor a intenção do usuário e fornecer respostas mais naturais e contextualmente
+relevantes. Modelos de linguagem como GPT-3 e GPT-4 da OpenAI são exemplos de tecnologia
+usada para construir chatbots baseados em Inteligência Artificial. O ChatGPT é um chatbot
+baseado em IA. Esse é o tipo de chatbot que iremos construir agora no Projeto 3.
+
+       Esses bots são capazes de aprender com as interações passadas, melhorando assim a
+qualidade das respostas ao longo do tempo. Eles podem gerenciar uma variedade de perguntas
+e até mesmo participar de conversas mais complexas com os usuários.
+
+
+
+
+                                   Data Science Academy
+                               www.datascienceacademy.com.br
+

@@ -1,0 +1,54 @@
+          Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+              Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+    Análise de Dados e Data Science
+
+              Projeto 3
+Construindo Chatbot Personalizado com
+      GPT-4 e Linguagem Python
+
+
+
+
+               Data Science Academy
+           www.datascienceacademy.com.br
+                            Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+     Vamos construir um chatbot personalizado usando o modelo de linguagem GPT-4 (o
+mesmo disponível no ChatGPT) e Linguagem Python.
+
+       Este Projeto tem como objetivo trazer para você os passos gerais de construção e caso
+queira aprender a trabalhar com modelos de linguagem recomendamos a Formação Engenheiro
+de IA aqui na DSA.
+
+       Se você tiver alguma restrição devido ao país em que está ou o tipo de conta na OpenAI,
+você pode usar o GPT-3.5 e o procedimento será o mesmo.
+
+      Acompanhe as aulas a seguir com o máximo de atenção para reproduzir o projeto no seu
+computador.
+
+       Bons estudos.
+
+
+
+
+                                  Data Science Academy
+                              www.datascienceacademy.com.br
+

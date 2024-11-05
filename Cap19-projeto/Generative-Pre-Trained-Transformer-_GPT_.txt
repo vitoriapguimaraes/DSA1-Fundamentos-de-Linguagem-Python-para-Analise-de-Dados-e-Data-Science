@@ -1,0 +1,113 @@
+          Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+              Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+   Análise de Dados e Data Science
+
+  Generative Pre-Trained Transformer
+                 (GPT)
+
+
+
+
+               Data Science Academy
+           www.datascienceacademy.com.br
+                            Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+       GPT significa Generative Pre-Trained Transformer, um modelo lançado pela OpenAI em
+2018. É um modelo de linguagem desenvolvido para obter texto como se fosse gerado por
+humanos.
+
+        Baseia-se principalmente no conceito de transformadores, que forma a base de seu
+algoritmo. Transformer é um tipo de arquitetura de rede neural que usa uma camada de auto-
+atenção para identificar as relações entre diferentes partes da entrada, como palavras em uma
+frase. Aqui está o paper original da pesquisa sobre a camada de auto-atenção:
+
+                              https://arxiv.org/abs/1706.03762
+
+         O GPT tem várias camadas de transformadores empilhados uns sobre os outros. Cada
+camada recebe a entrada da camada anterior, processa usando camadas de auto-atenção e feed-
+forward e, em seguida, passa sua saída para a próxima camada na arquitetura. A saída da camada
+final é usada para obter o texto previsto.
+
+       Com base nas palavras anteriores, o GPT usa esse conceito para prever a próxima palavra
+em uma frase. Isso permite que o modelo aprenda os padrões e relacionamentos nos dados de
+um idioma para que possa gerar um texto coerente e contextualmente apropriado. Assim, o GPT
+tem uma variedade de aplicações em classificação de texto, tradução automática e geração de
+texto.
+
+       Com o tempo, a OpenAI lançou várias versões avançadas do GPT. Vejamos brevemente
+as características especiais de cada um deles:
+
+       1. GPT-2: Modelo GPT disponível gratuitamente. A seguir estão suas características:
+
+       a. Ele foi treinado em um corpus de dados com quase 1,5 bilhão de parâmetros,
+permitindo que o modelo estude padrões mais complexos e gere textos mais semelhantes aos
+humanos.
+
+       b. Possui um recurso para limitar o número de previsões que o impede de gerar texto
+inapropriado ou enganoso.
+
+       2. GPT-3: É mais robusto e avançado que o GPT 2. Alguns recursos interessantes são:
+
+       a. Ele é treinado em 175 bilhões de parâmetros, tornando-o muito maior que o GPT-2.
+
+       b. O OpenAI introduziu um novo recurso chamado "aprendizagem de poucos tiros" ("few-
+shot learning") e "aprendizado de tiros zero" ("zero-shot learning"), que permite que o modelo
+tenha um bom desempenho em tarefas nas quais não é treinado. Isso é obtido por meio de pré-
+treinamento em conjuntos de dados muito diversos.
+
+
+
+
+                                  Data Science Academy
+                              www.datascienceacademy.com.br
+                             Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                 Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+       c. Outro recurso chamado "aprendizagem no contexto" permite que o modelo aprenda
+com as entradas simultaneamente e ajuste suas respostas de acordo.
+
+       3. GPT-3.5: Esta é uma versão mais avançada do GPT-3. Ele executa todas as tarefas que
+o GPT-3 faz, mas com maior precisão. Está incorporado no ChatGPT em versão gratuita.
+
+         4. GPT-4: Esta versão mais recente é 10 vezes mais avançada que sua antecessora. Ele é
+treinado para resolver problemas mais complexos e entende dialetos que são extremamente
+difíceis para qualquer outro modelo de linguagem entender, pois os dialetos variam de lugar para
+lugar. Ele pode sintetizar histórias, poemas, redações, etc., e responder aos usuários com alguma
+emoção.
+
+       Outra característica impressionante do GPT-4 é que ele é capaz de analisar imagens. Ele
+pode ser usado para gerar legendas automáticas e responder a perguntas com base na imagem
+de entrada. No entanto, não pode sintetizar imagens por conta própria.
+
+        Estamos neste momento da história humana ajudando a construir as tecnologias que
+vão impactar a nossa geração e as gerações futuras através da Inteligência Artificial. Isso não é
+incrível?
+
+       Os modelos GPT são estudados em detalhes na Formação Engenheiro de IA com
+Linguagem Python, através de diversos projetos práticos. Confira:
+
+        https://www.datascienceacademy.com.br/bundle/formacao-engenheiro-de-ia
+
+
+
+
+                                   Data Science Academy
+                               www.datascienceacademy.com.br
+

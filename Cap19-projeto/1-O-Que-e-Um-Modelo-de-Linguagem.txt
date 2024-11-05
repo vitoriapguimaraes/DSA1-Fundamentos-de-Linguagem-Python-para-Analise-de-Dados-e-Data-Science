@@ -1,0 +1,63 @@
+          Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+              Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+   Análise de Dados e Data Science
+
+  O Que é Um Modelo de Linguagem?
+
+
+
+
+               Data Science Academy
+           www.datascienceacademy.com.br
+                                  Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                       Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+       Os modelos de linguagem são tipos de modelos de aprendizado de máquina (Machine
+Learning) que foram treinados para entender e gerar texto em linguagem humana. Eles são
+capazes de realizar várias tarefas relacionadas à linguagem, como tradução de texto, resposta a
+perguntas, resumo de texto, geração de texto criativo e muito mais.
+
+        Os modelos de linguagem são treinados em grandes quantidades de texto para aprender
+padrões na linguagem humana, incluindo gramática, sintaxe, estilo, tom e até mesmo alguns
+fatos sobre o mundo. Uma vez treinados, eles podem gerar texto que é frequentemente
+indistinguível do texto escrito por humanos.
+
+       Existem vários tipos de modelos de linguagem, mas os mais recentes e mais poderosos
+são baseados em uma técnica chamada Transformer. Esses modelos, como o GPT-4 da OpenAI,
+usam uma arquitetura de rede neural artificial conhecida como Transformer, que é
+especialmente eficaz para entender o contexto e a estrutura em sequências de texto. O Deep
+Learning Book traz vasto material gratuito sobre os Transformers:
+
+   https://www.deeplearningbook.com.br/transformadores-o-estado-da-arte-em-processamento-de-linguagem-natural/
+
+
+       Os modelos de linguagem são usados em assistentes de voz como a Siri e a Alexa, em
+chatbots, em ferramentas de escrita assistida por IA, em sistemas de tradução automática, e em
+muitos outros aplicativos onde a compreensão ou geração de texto é necessária.
+
+       Os modelos de linguagem são estudados aqui na DSA na Formação Engenheiro de IA, em
+especial no curso de Processamento de Linguagem Natural com Transformers. Acesse o link
+abaixo para saber mais:
+
+         https://www.datascienceacademy.com.br/bundle/formacao-engenheiro-de-ia
+
+
+
+
+                                       Data Science Academy
+                                   www.datascienceacademy.com.br
+
