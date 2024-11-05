@@ -1,0 +1,49 @@
+           Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+               Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+Fundamentos de Linguagem Python Para
+   Análise de Dados e Data Science
+
+                Lab 5
+Robô Trading com Inteligência Artificial
+        em Linguagem Python
+
+
+
+
+                Data Science Academy
+            www.datascienceacademy.com.br
+                            Data Science Academy vipistori@gmail.com 66e82f2581d04416e608a8a8
+
+
+                                Fundamentos de Linguagem Python para Análise de Dados e Data Science
+
+
+
+
+       Neste Lab trabalharemos com dados reais disponíveis publicamente no link abaixo:
+
+     https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv
+
+        Os dados serão fornecidos a você com os demais arquivos ao final do capítulo. Nosso
+objetivo é criar um sistema de IA que aprenda a operar na bolsa de valores e seja capaz de, a
+partir de um saldo inicial, tomar decisões de compra e venda de ações visando obter lucro.
+
+       Acompanhe as aulas na sequência. Bons estudos.
+
+
+
+
+                                  Data Science Academy
+                              www.datascienceacademy.com.br
+

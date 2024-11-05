@@ -1,0 +1,38 @@
+CURSO: Fundamentos de Linguagem Python para Analise de Dados e Data Science
+=> CAPÍTULO 18
+
+### Aprendizado Por Reforço(Reinforcement Learning)
+
+Seja bem-vindo(a) ao Capítulo 18. Este capítulo traz para você uma introdução a uma das
+mais avançadas técnicas de Machine Learning, o aprendizado por reforço.
+
+--------------------------------------------------------------------------------
+
+O Que é Aprendizado Por Reforço (Reinforcement Learning)?
+
+
+        O Aprendizado por Reforço (Reinforcement Learning) é uma área de aprendizado de
+máquina que foca no treinamento de agentes para tomar decisões ótimas em um ambiente,
+através da interação com esse ambiente e da experimentação. O objetivo do agente é aprender
+uma política que mapeia estados do ambiente para ações que maximizam a recompensa
+acumulada ao longo do tempo. Recomendamos o capítulo 62 do Deep Learning para uma
+definição completa. Aqui está o link para você:
+
+         https://www.deeplearningbook.com.br/o-que-e-aprendizagem-por-reforco/
+
+       No Aprendizado por Reforço, o agente recebe uma recompensa (positiva ou negativa)
+após executar uma ação em um estado específico. Através dessas recompensas, o agente
+aprende a associar ações com estados do ambiente e assim consegue tomar decisões melhores
+ao longo do tempo.
+
+       O processo de aprendizado ocorre iterativamente, em episódios, com o agente
+explorando o ambiente. A exploração envolve a escolha de ações aleatórias para descobrir novos
+estados e recompensas, sendo que as ações devem ser escolhidas de forma que maximizem a
+recompensa com base no conhecimento atual.
+
+        Algoritmos mais comuns de Aprendizado por Reforço incluem: Q-Learning, Deep Q-
+Networks (DQN), Policy Gradients, Actor-Critic e Proximal Policy Optimization (PPO), entre
+outros. Esses algoritmos têm sido aplicados com sucesso em uma ampla variedade de problemas,
+incluindo jogos, robótica, otimização de sistemas e negociação de ações em bolsa de valores.
+
+       Neste capítulo usaremos o Q-Learning.
